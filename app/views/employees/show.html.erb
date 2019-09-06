@@ -1,0 +1,16 @@
+list all of their attributes (and as a bonus, try to get their picture to show up!)
+<h1>Employee Info</h1>
+<br>
+<label>Name:</label>
+<%= @employee.first_name %>
+<%= @employee.last_name %>
+<label>Aka.</label>
+<%= @employee.alias %><br>
+<label>Position:</label>
+<%= @employee.title %><br>
+<label>Office:</label>
+<%= @employee.office %><br>
+<label>Photo:</label>
+<img src= "<%= @employee.img_url %>"><br>
+<label>Dog:</label>
+<%= @employee.dog.name %>
