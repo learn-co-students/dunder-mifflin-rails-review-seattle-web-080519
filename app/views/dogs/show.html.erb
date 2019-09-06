@@ -1,0 +1,10 @@
+Dog show page should have their name, breed, age and the list of Dunder Mifflin Employees they are connected to
+
+<h1> Dog info </h1>
+
+<% @dog.employees.each do |employee| %>
+   <%= employee.dog.name %>'s employees: 
+   <ul>
+    <%= employee.first_name %><br>
+    </ul>
+    <% end %>

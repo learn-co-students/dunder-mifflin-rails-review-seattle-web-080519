@@ -1,0 +1,8 @@
+a user should be able to click on a specific Employee and take them to their corresponding show page
+<h1>Employees</h1>
+
+<% @employees.each do |employee| %>
+    <ul>
+    <%= link_to employee.first_name, employee_path(employee) %>
+    </ul>
+    <% end %>
